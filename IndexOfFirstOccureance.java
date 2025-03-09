@@ -1,7 +1,7 @@
 // 28. Find the Index of the First Occurrence in a String
 // Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 // Brute force approach:-
-class Solution {
+class Solution4 {
     public int strStr(String haystack, String needle) {
         int j = 0, i = 0, index = -1;
         if (needle.length() > haystack.length()) {
@@ -33,7 +33,7 @@ class Solution {
 
 // Optimize Solution with Knuth-Morris-Pratt (KMP) algorithm
 
-class Solution {
+class Solution3 {
     public int strStr(String haystack, String needle) {
         if (needle.isEmpty()) {
             return 0;
